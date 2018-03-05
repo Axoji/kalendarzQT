@@ -71,7 +71,7 @@
      </item>
      <item>
       <layout class="QGridLayout" name="grid_systemMonitor">
-       <property name="horizontalSpacing">
+       <property name="spacing">
         <number>0</number>
        </property>
        <item row="0" column="0">
