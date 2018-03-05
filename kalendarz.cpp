@@ -17,7 +17,7 @@ kalendarz::kalendarz(QWidget *parent) :
     timer->start();
 
     connect(timer, &QTimer::timeout, [this]{
-        auto str = QDateTime::currentDateTime().toString();
+        auto str = QTime::currentTime().toString();
         ui->str_time->setText(str);
     });
 }
