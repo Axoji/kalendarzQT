@@ -18,12 +18,8 @@ kalendarz::kalendarz(QWidget *parent) :
 
     connect(timer, &QTimer::timeout, [this]{
         auto str = QDateTime::currentDateTime().toString();
-        ui->currentTime->setText(str);
+        ui->str_time->setText(str);
     });
-
-    connect(timer, &QTimer::timeout,
-            this, &kalendarz::onTimerTimeout);
-    onTimerTimeout();
 }
 
 kalendarz::~kalendarz()
@@ -31,8 +27,3 @@ kalendarz::~kalendarz()
     delete ui;
 }
 
-void kalendarz::onTimerTimeout()
-{
-    auto str = QDateTime::currentDateTime().toString();
-    ui->currentTime_2->setText(str);
-}

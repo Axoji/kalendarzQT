@@ -17,13 +17,9 @@ public:
     explicit kalendarz(QWidget *parent = 0);
     ~kalendarz();
 
-public slots:
-
-    void onTimerTimeout();
-
 private:
-    QTimer* timer;
     Ui::kalendarz *ui;
+    QTimer* timer;
 };
 
 #endif // KALENDARZ_H
